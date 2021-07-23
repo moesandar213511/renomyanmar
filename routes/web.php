@@ -115,10 +115,6 @@ Route::group(['middleware'=>['auth']],function(){
     Route::post('api/get_main_category','CategoryController@get_main_category');
     Route::post('api/get_sub_category/{main_category_id}','CategoryController@get_sub_category');
 //##############################Site Admin##########################################33333
-
-
-
-
 });
 
 Route::post('api/all_ads','AdsController@all_ads');
@@ -132,7 +128,7 @@ Route::post('api/get_all_company','CompanyController@get_all_activated_company')
 //#################################################################################
 //#################################################################################
 //#################################################################################
-Route::group(['middleware'=>['admin']],function() {
+// Route::group(['middleware'=>['admin']],function() {
 
     Route::get('/admin/','AdminController@show_dashboard');
     Route::get('/admin/login_company_account/{company_id}','AdminController@login_company_account');
@@ -173,7 +169,7 @@ Route::group(['middleware'=>['admin']],function() {
     Route::get('/admin/company_by_sub_category','AdminController@company_by_sub_category');
     Route::get('/admin/company_by_main_category','AdminController@company_by_main_category');
 
-});
+// });
 
 
 

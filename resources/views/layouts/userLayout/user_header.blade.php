@@ -1,5 +1,5 @@
 
-<div class="Loader"></div>
+{{-- <div class="Loader"></div> --}}
 <div class="wrapper">
     <!-- Start Navigation -->
     <nav class="navbar navbar-default navbar-fixed navbar-light white bootsnav">
